@@ -1,0 +1,114 @@
+:root {
+    --bg: #15041e;
+    --panel: #2c3e50;
+    --accent: #26ff0a;
+    --text: #ffffff;
+    --font: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    margin: 0;
+    padding-left: 220px;
+}
+
+header {
+    padding: 20px;
+    position: relative;
+}
+
+h1 {
+    color: var(--accent);
+}
+
+h2 {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: var(--panel);
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 300px;
+}
+
+input, textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--accent);
+    font-family: var(--font);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--accent);
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffffff;
+}
+
+button:active {
+    background-color: #1bc700;
+}
+
+a:visited {
+    color: #9dff8a;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+.card {
+    background-color: var(--panel);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style-position: inside;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(38, 255, 10, 0.5);
+}
+
+.card:active {
+    transform: translateY(2px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid var(--accent);
+}
